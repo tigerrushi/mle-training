@@ -8,5 +8,5 @@ cd mle-training
 conda env create -f env.yml
 cd mle_code_snippet
 pip install sklearn
-python nonstandardcode
+python nonstandardcode.py
 ```
