@@ -1,6 +1,8 @@
 import os
 import tarfile
 
+
+
 import numpy as np
 import pandas as pd
 from scipy.stats import randint
@@ -40,9 +42,8 @@ def load_housing_data(housing_path=HOUSING_PATH):
     return pd.read_csv(csv_path)
 
 
+
 housing = load_housing_data()
-
-
 train_set, test_set = train_test_split(housing, test_size=0.2, random_state=42)
 
 housing["income_cat"] = pd.cut(
@@ -64,6 +65,7 @@ def income_cat_proportions(data):
 
 train_set, test_set = train_test_split(housing, test_size=0.2, random_state=42)
 
+
 compare_props = pd.DataFrame(
     {
         "Overall": income_cat_proportions(housing),
@@ -77,6 +79,7 @@ compare_props["Rand. %error"] = (
 compare_props["Strat. %error"] = (
     100 * compare_props["Stratified"] / compare_props["Overall"] - 100
 )
+
 
 for set_ in (strat_train_set, strat_test_set):
     set_.drop("income_cat", axis=1, inplace=True)
