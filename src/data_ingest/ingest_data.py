@@ -1,6 +1,7 @@
-import argparse
+import argparse, configparser
 import os
 import tarfile
+import pickle
 
 import numpy as np
 import pandas as pd
@@ -19,7 +20,8 @@ def fetch_housing_data(housing_url, housing_path):
 
 
 def load_housing_data(housing_path):
-    csv_path = os.path.join(housing_path, "housing.csv")
+    csv_path = housing_path+"/housing.csv"
+    print(csv_path)
     return pd.read_csv(csv_path)
 
 
@@ -119,22 +121,36 @@ def data_preprocessing(housing, processed_datapath):
     strat_test_set.to_csv(
         os.path.join(processed_datapath, "strat_test_set.csv"), index=False
     )
-
+    pickle.dump(
+            imputer,
+            open(processed_datapath + "/imputer.pkl", "wb"),
+    )
 
 if __name__ == "__main__":
 
+    config = configparser.ConfigParser()
+    path = 'C:/Users/rushikesh.naik/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/rushikesh/assignment__1_2/mle-training/config.ini'
+    config.read(path)
+
+    output_conf_path = config['Address']['output_path']
+    processed_conf_path = config['Address']['processed_datapath']
+
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "output_path", help="Enter the output folder path to store the dataset"
+        "--output_path", help="Enter the output folder path to store the dataset", default=output_conf_path
     )
     parser.add_argument(
-        "processed_datapath",
-        help="Enter the  processed data folder path to store the dataset ready for modeling and inference",
+        "--processed_datapath",
+        help="Enter the  processed data folder path to store the \
+         dataset ready for modeling and inference",default=processed_conf_path
+
     )
     args = parser.parse_args()
 
     output_path = args.output_path
     processed_datapath = args.processed_datapath
+
+    print(output_path, processed_datapath)
 
     DOWNLOAD_ROOT = (
         "https://raw.githubusercontent.com/ageron/handson-ml/master/"
@@ -145,7 +161,7 @@ if __name__ == "__main__":
     # calling the data download function
     fetch_housing_data(housing_url=HOUSING_URL, housing_path=HOUSING_PATH)
     housing_data = load_housing_data(housing_path=HOUSING_PATH)
-    print(housing_data.shape, "\n", housing_data.head(2))
+    print(HOUSING_PATH)
 
     data_preprocessing(
         housing=housing_data, processed_datapath=processed_datapath

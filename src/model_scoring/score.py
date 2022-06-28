@@ -4,32 +4,42 @@ import pickle
 
 import numpy as np
 import pandas as pd
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error, mean_squared_error
-from sklearn.model_selection import (
-    GridSearchCV,
-    RandomizedSearchCV,
-    StratifiedShuffleSplit,
-)
-from sklearn.tree import DecisionTreeRegressor
 
 
-def model_training(
-    model_instance, housing_prepared, housing_labels, model_path
-):
-    model_instance.fit(housing_prepared, housing_labels)
+def testing_using_strat_test_set(model, imputer, strat_test_set):
+    X_test = strat_test_set.drop("median_house_value", axis=1)
+    y_test = strat_test_set["median_house_value"].copy()
 
-    pred = model_instance.predict(housing_prepared)
-    mse = mean_squared_error(housing_labels, pred)
-    rmse = np.sqrt(mse)
-    mae = mean_absolute_error(housing_labels, pred)
-    print(f"{model_instance} algorithm, mse : {mse}, rmse {rmse}, mae {mae}")
-    pickle.dump(
-        model_instance,
-        open(model_path + "/" + str(model_instance)[:-2] + ".pkl", "wb"),
+    X_test_num = X_test.drop("ocean_proximity", axis=1)
+    X_test_prepared = imputer.transform(X_test_num)
+    X_test_prepared = pd.DataFrame(
+        X_test_prepared, columns=X_test_num.columns, index=X_test.index
+    )
+    X_test_prepared["rooms_per_household"] = (
+        X_test_prepared["total_rooms"] / X_test_prepared["households"]
+    )
+    X_test_prepared["bedrooms_per_room"] = (
+        X_test_prepared["total_bedrooms"] / X_test_prepared["total_rooms"]
+    )
+    X_test_prepared["population_per_household"] = (
+        X_test_prepared["population"] / X_test_prepared["households"]
     )
 
+    X_test_cat = X_test[["ocean_proximity"]]
+    X_test_prepared = X_test_prepared.join(
+        pd.get_dummies(X_test_cat, drop_first=True)
+    )
+
+    model_predictions = model.predict(X_test_prepared)
+    model_mse = mean_squared_error(y_test, model_predictions)
+    model_rmse = np.sqrt(model_mse)
+    model_mae = mean_absolute_error(y_test, model_predictions)
+
+    print(f"Model : Mean Squared Error {model_mse}")
+    print(f"Model : Root Mean Squared Error {model_rmse}")
+    print(f"Model : Mean Squared Error {model_mse}")
+    print(f"Model : Mean Squared Error {model_mae}")
 
 if __name__ == "__main__":
     config = configparser.ConfigParser()
@@ -39,7 +49,8 @@ if __name__ == "__main__":
     housing_prepared = config["ProcessedData"]["housing_prepared"]
     housing_labels = config["ProcessedData"]["housing_labels"]
     strat_test_set = config["ProcessedData"]["strat_test_set"]
-    model_path = config["ProcessedData"]["model_path"]
+    model_path = config["ForScoring"]["model_path"]
+    imputer_path = config["ForScoring"]["imputer_path"]
 
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -76,16 +87,10 @@ if __name__ == "__main__":
     housing_labels = pd.read_csv(housing_labels)
     strat_test_set = pd.read_csv(strat_test_set)
 
-    model_training(
-        LinearRegression(), housing_prepared, housing_labels, model_path
-    )
+    imputer  = pickle.load(open(imputer_path, 'rb'))
+    model  = pickle.load(open(model_path, 'rb'))
+    testing_using_strat_test_set(model, imputer, strat_test_set)
 
-    model_training(
-        DecisionTreeRegressor(random_state=42), housing_prepared, housing_labels, model_path
-    )
 
-    model_training(
-        RandomForestRegressor(n_estimators=100, random_state=42), housing_prepared, housing_labels, model_path
-    )
 
 
