@@ -11,9 +11,7 @@ import pandas as pd
 from six.moves import urllib
 from sklearn.model_selection import StratifiedShuffleSplit, train_test_split
 from sklearn.impute import SimpleImputer
-logger = l.configure_logger(log_file=os.path.join(r"C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\logs\logging_files","custom_config.log"))
 
-logger.info("Starting ingest_data.py")
 
 def fetch_housing_data(housing_url, housing_path):
     logger.info("Fetching data started")
@@ -143,10 +141,11 @@ def data_preprocessing(housing, processed_datapath):
             imputer,
             open(processed_datapath + "/imputer.pkl", "wb"),
     )
-    return True
 
 if __name__ == "__main__":
+    logger = l.configure_logger(log_file=os.path.join(r"C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\logs\logging_files","custom_config.log"))
 
+    logger.info("Starting ingest_data.py")
     config = configparser.ConfigParser()
     logger.info("Cnfig parser initiated")
     path = 'C:/Users/rushikesh.naik/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/rushikesh/assignment__1_2/mle-training/config.ini'

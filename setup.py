@@ -8,7 +8,7 @@ setup(
     author='Rushikesh Naik',
     description='MLE training Project. Fun Project!',
     long_description='This Project will help to find the regression values with help of differnt parameters',
-    packages= find_packages(exclude=['*tests*']),
+    packages= ['src\data_ingest', 'src\model_scoring', 'src\model_training'],
     install_requires=['pandas', 'tarfile', 'six', 'sklearn', 'numpy', 'pickle']
 
     # python_requires='>=3.7, <4',

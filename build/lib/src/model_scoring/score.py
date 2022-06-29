@@ -8,9 +8,7 @@ import logger_01 as l
 import numpy as np
 import pandas as pd
 from sklearn.metrics import mean_absolute_error, mean_squared_error
-logger = l.configure_logger(log_file=os.path.join(r"C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\logs\logging_files","custom_config.log"))
 
-logger.info("Starting Score.py")
 
 def testing_using_strat_test_set(model, imputer, strat_test_set):
     logger.info("Model evalutation : scoring started")
@@ -53,7 +51,9 @@ def testing_using_strat_test_set(model, imputer, strat_test_set):
     print(f"Model : Mean Squared Error {model_mae}")
 
 if __name__ == "__main__":
+    logger = l.configure_logger(log_file=os.path.join(r"C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\logs\logging_files","custom_config.log"))
 
+    logger.info("Starting Score.py")
     logger.info("Creating Instance of Configparser")
     config = configparser.ConfigParser()
 
