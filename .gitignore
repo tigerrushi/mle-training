@@ -1,4 +1,7 @@
 *.pyc
 *.csv
-*.pkl
-saved_models
+*.log
+*.tgz
+saved_models/
+logging_files/
+build/
