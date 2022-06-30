@@ -1,2 +1,7 @@
 *.pyc
 *.csv
+*.log
+*.tgz
+saved_models/
+logging_files/
+build/
