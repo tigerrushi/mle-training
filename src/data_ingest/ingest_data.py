@@ -1,19 +1,31 @@
-import argparse, configparser
+import argparse
+import configparser
 import os
-import tarfile
 import pickle
 import sys
-sys.path.insert(1, r"C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\logs")
+import tarfile
+
+sys.path.insert(
+    1,
+    r"C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\logs",
+)
 
 import logger_01 as l
 import numpy as np
 import pandas as pd
 from six.moves import urllib
-from sklearn.model_selection import StratifiedShuffleSplit, train_test_split
 from sklearn.impute import SimpleImputer
-logger = l.configure_logger(log_file=os.path.join(r"C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\logs\logging_files","custom_config.log"))
+from sklearn.model_selection import StratifiedShuffleSplit, train_test_split
+
+logger = l.configure_logger(
+    log_file=os.path.join(
+        r"C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\logs\logging_files",
+        "custom_config.log",
+    )
+)
 
 logger.info("Starting ingest_data.py")
+
 
 def fetch_housing_data(housing_url, housing_path):
     logger.info("Fetching data started")
@@ -28,7 +40,7 @@ def fetch_housing_data(housing_url, housing_path):
 
 def load_housing_data(housing_path):
     logger.info("Loading the housing path")
-    csv_path = housing_path+"/housing.csv"
+    csv_path = housing_path + "/housing.csv"
     print(csv_path)
     logger.info("Returning the housing_path dataframe")
     return pd.read_csv(csv_path)
@@ -41,10 +53,7 @@ def income_cat_proportions(data):
 
 def data_preprocessing(housing, processed_datapath):
     logger.info("Spliting the DataSet")
-    train_set, test_set = train_test_split(
-        housing, test_size=0.2, random_state=42
-    )
-
+    train_set, test_set = train_test_split(housing, test_size=0.2, random_state=42)
 
     housing["income_cat"] = pd.cut(
         housing["median_income"],
@@ -58,9 +67,7 @@ def data_preprocessing(housing, processed_datapath):
         strat_train_set = housing.loc[train_index]
         strat_test_set = housing.loc[test_index]
     logger.info("Stratified Shuffle split completed")
-    train_set, test_set = train_test_split(
-        housing, test_size=0.2, random_state=42
-    )
+    train_set, test_set = train_test_split(housing, test_size=0.2, random_state=42)
 
     logger.info("Creating DataFrame for data preprocessing with income_cat_proportions")
     compare_props = pd.DataFrame(
@@ -87,15 +94,9 @@ def data_preprocessing(housing, processed_datapath):
 
     corr_matrix = housing.corr()
     corr_matrix["median_house_value"].sort_values(ascending=False)
-    housing["rooms_per_household"] = (
-        housing["total_rooms"] / housing["households"]
-    )
-    housing["bedrooms_per_room"] = (
-        housing["total_bedrooms"] / housing["total_rooms"]
-    )
-    housing["population_per_household"] = (
-        housing["population"] / housing["households"]
-    )
+    housing["rooms_per_household"] = housing["total_rooms"] / housing["households"]
+    housing["bedrooms_per_room"] = housing["total_bedrooms"] / housing["total_rooms"]
+    housing["population_per_household"] = housing["population"] / housing["households"]
 
     housing = strat_train_set.drop(
         "median_house_value", axis=1
@@ -110,9 +111,7 @@ def data_preprocessing(housing, processed_datapath):
     logger.info("imputer fitted on housing_num")
     X = imputer.transform(housing_num)
 
-    housing_tr = pd.DataFrame(
-        X, columns=housing_num.columns, index=housing.index
-    )
+    housing_tr = pd.DataFrame(X, columns=housing_num.columns, index=housing.index)
     housing_tr["rooms_per_household"] = (
         housing_tr["total_rooms"] / housing_tr["households"]
     )
@@ -124,9 +123,7 @@ def data_preprocessing(housing, processed_datapath):
     )
 
     housing_cat = housing[["ocean_proximity"]]
-    housing_prepared = housing_tr.join(
-        pd.get_dummies(housing_cat, drop_first=True)
-    )
+    housing_prepared = housing_tr.join(pd.get_dummies(housing_cat, drop_first=True))
 
     logger.info(f"Storing the processed data at {processed_datapath}")
     housing_prepared.to_csv(
@@ -140,33 +137,36 @@ def data_preprocessing(housing, processed_datapath):
     )
     logger.info(f"Dumping Imputer for testing use @ {processed_datapath}")
     pickle.dump(
-            imputer,
-            open(processed_datapath + "/imputer.pkl", "wb"),
+        imputer,
+        open(processed_datapath + "/imputer.pkl", "wb"),
     )
     return True
+
 
 if __name__ == "__main__":
 
     config = configparser.ConfigParser()
     logger.info("Cnfig parser initiated")
-    path = 'C:/Users/rushikesh.naik/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/rushikesh/assignment__1_2/mle-training/config.ini'
+    path = "C:/Users/rushikesh.naik/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/rushikesh/assignment__1_2/mle-training/config.ini"
     config.read(path)
     logger.info("Reading Config Parameters")
 
-    output_conf_path = config['Address']['output_path']
-    processed_conf_path = config['Address']['processed_datapath']
+    output_conf_path = config["Address"]["output_path"]
+    processed_conf_path = config["Address"]["processed_datapath"]
     logger.info("Config Parameters Reading is completed")
 
     logger.info("Initiating the Argument Parser")
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--output_path", help="Enter the output folder path to store the dataset", default=output_conf_path
+        "--output_path",
+        help="Enter the output folder path to store the dataset",
+        default=output_conf_path,
     )
     parser.add_argument(
         "--processed_datapath",
         help="Enter the  processed data folder path to store the \
-         dataset ready for modeling and inference",default=processed_conf_path
-
+         dataset ready for modeling and inference",
+        default=processed_conf_path,
     )
     args = parser.parse_args()
 
@@ -175,9 +175,7 @@ if __name__ == "__main__":
 
     logger.info("Initializing Variables for the Data")
 
-    DOWNLOAD_ROOT = (
-        "https://raw.githubusercontent.com/ageron/handson-ml/master/"
-    )
+    DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml/master/"
     HOUSING_PATH = os.path.join(output_path, "housing")
     HOUSING_URL = DOWNLOAD_ROOT + f"datasets/housing/housing.tgz"
 
@@ -190,8 +188,6 @@ if __name__ == "__main__":
     housing_data = load_housing_data(housing_path=HOUSING_PATH)
 
     logger.info("Data Preprocessing Started")
-    data_preprocessing(
-        housing=housing_data, processed_datapath=processed_datapath
-    )
+    data_preprocessing(housing=housing_data, processed_datapath=processed_datapath)
     logger.info("Data Preprocessing Completed")
     logger.info("*********************************************************************")

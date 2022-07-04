@@ -2,15 +2,27 @@ import argparse
 import configparser
 import pickle
 import sys
-sys.path.insert(1, r"C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\logs")
+
+sys.path.insert(
+    1,
+    r"C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\logs",
+)
 import os
+
 import logger_01 as l
 import numpy as np
 import pandas as pd
 from sklearn.metrics import mean_absolute_error, mean_squared_error
-logger = l.configure_logger(log_file=os.path.join(r"C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\logs\logging_files","custom_config.log"))
+
+logger = l.configure_logger(
+    log_file=os.path.join(
+        r"C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\logs\logging_files",
+        "custom_config.log",
+    )
+)
 
 logger.info("Starting Score.py")
+
 
 def testing_using_strat_test_set(model, imputer, strat_test_set):
     logger.info("Model evalutation : scoring started")
@@ -35,9 +47,7 @@ def testing_using_strat_test_set(model, imputer, strat_test_set):
     )
 
     X_test_cat = X_test[["ocean_proximity"]]
-    X_test_prepared = X_test_prepared.join(
-        pd.get_dummies(X_test_cat, drop_first=True)
-    )
+    X_test_prepared = X_test_prepared.join(pd.get_dummies(X_test_cat, drop_first=True))
     logger.info("predicting model")
     model_predictions = model.predict(X_test_prepared)
     logger.info("Calculating Mean Squared Error value")
@@ -51,6 +61,7 @@ def testing_using_strat_test_set(model, imputer, strat_test_set):
     print(f"Model : Root Mean Squared Error {model_rmse}")
     print(f"Model : Mean Squared Error {model_mse}")
     print(f"Model : Mean Squared Error {model_mae}")
+
 
 if __name__ == "__main__":
 
@@ -69,25 +80,27 @@ if __name__ == "__main__":
     logger.info("ArgumentParser is instanciated")
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--housing_prepared", help="Enter the output folder path to store the dataset", default=housing_prepared
+        "--housing_prepared",
+        help="Enter the output folder path to store the dataset",
+        default=housing_prepared,
     )
     parser.add_argument(
         "--housing_labels",
         help="Enter the  processed data folder path to store the \
-         dataset ready for modeling and inference",default=housing_labels
-
+         dataset ready for modeling and inference",
+        default=housing_labels,
     )
     parser.add_argument(
         "--strat_test_set",
         help="Enter the  processed data folder path to store the \
-         dataset ready for modeling and inference",default=strat_test_set
-
+         dataset ready for modeling and inference",
+        default=strat_test_set,
     )
     parser.add_argument(
         "--model_path",
         help="Enter the  processed data folder path to store the \
-         dataset ready for modeling and inference",default=model_path
-
+         dataset ready for modeling and inference",
+        default=model_path,
     )
     args = parser.parse_args()
     logger.info("Arguments parsed.")
@@ -103,11 +116,7 @@ if __name__ == "__main__":
     strat_test_set = pd.read_csv(strat_test_set)
 
     logger.info("loading pickle models")
-    imputer  = pickle.load(open(imputer_path, 'rb'))
-    model  = pickle.load(open(model_path, 'rb'))
+    imputer = pickle.load(open(imputer_path, "rb"))
+    model = pickle.load(open(model_path, "rb"))
     logger.info("Calling testing function")
     testing_using_strat_test_set(model, imputer, strat_test_set)
-
-
-
-
