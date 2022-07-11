@@ -122,3 +122,1734 @@ Calculating Mean Absolute error value
 Starting ingest_data.py
 Loading the housing path
 Returning the housing_path dataframe
+Starting ingest_data.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\data\raw\housing\housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Spliting the DataSet
+Spliting with StratifiedShuffleSplit
+Stratified Shuffle split completed
+Creating DataFrame for data preprocessing with income_cat_proportions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Rand>%error column creating in compare_props variable
+Creating an instance of SimpleImputer
+Dropping ocean_proximity Column
+imputer fitted on housing_num
+Storing the processed data at C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\data\processed
+Dumping Imputer for testing use @ C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\data\processed
+Data Preprocessing Completed
+*********************************************************************
+Starting ingest_data.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\data\raw\housing\housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Starting ingest_data.py
+Starting ingest_data.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\data\raw\housing\housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\data\raw\housing\housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\data\raw\housing\housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Training Started
+Training COmpleted
+LinearRegression() algorithm, mse : 4709785076.06003, rmse 68627.87390018745, mae 49438.66860915833
+Saving model
+Training Started
+Training COmpleted
+DecisionTreeRegressor(random_state=42) algorithm, mse : 0.0, rmse 0.0, mae 0.0
+Saving model
+Training Started
+Training COmpleted
+RandomForestRegressor(random_state=42) algorithm, mse : 347963118.7388974, rmse 18653.76955842699, mae 12073.174057049418
+Saving model
+Execution completed
+**********************************************************
+Creating Instance of Configparser
+Initializing Variables with config defaults value
+Reading csv files with pandas.read_Csv
+loading pickle models
+Calling testing function
+Model evalutation : scoring started
+Dropping Ocean_proximity column
+Transforming data with the imputer
+Creating X_test_prepared dataframe
+predicting model
+Calculating Mean Squared Error value
+Calculating Root Mean Squared Error value
+Calculating Mean Absolute error value
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\data\raw\housing\housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Training Started
+Training COmpleted
+LinearRegression() algorithm, mse : 4709785076.06003, rmse 68627.87390018745, mae 49438.66860915833
+Saving model
+Training Started
+Training COmpleted
+DecisionTreeRegressor(random_state=42) algorithm, mse : 0.0, rmse 0.0, mae 0.0
+Saving model
+Training Started
+Training COmpleted
+RandomForestRegressor(random_state=42) algorithm, mse : 347963118.7388974, rmse 18653.76955842699, mae 12073.174057049418
+Saving model
+Execution completed
+**********************************************************
+Creating Instance of Configparser
+Initializing Variables with config defaults value
+Reading csv files with pandas.read_Csv
+loading pickle models
+Calling testing function
+Model evalutation : scoring started
+Dropping Ocean_proximity column
+Transforming data with the imputer
+Creating X_test_prepared dataframe
+predicting model
+Calculating Mean Squared Error value
+Calculating Root Mean Squared Error value
+Calculating Mean Absolute error value
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : \data\raw\housing\housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\data\raw\housing\housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Training Started
+Training COmpleted
+LinearRegression() algorithm, mse : 4709785076.06003, rmse 68627.87390018745, mae 49438.66860915833
+Saving model
+Training Started
+Training COmpleted
+DecisionTreeRegressor(random_state=42) algorithm, mse : 0.0, rmse 0.0, mae 0.0
+Saving model
+Training Started
+Training COmpleted
+RandomForestRegressor(random_state=42) algorithm, mse : 347963118.7388974, rmse 18653.76955842699, mae 12073.174057049418
+Saving model
+Execution completed
+**********************************************************
+Creating Instance of Configparser
+Initializing Variables with config defaults value
+Reading csv files with pandas.read_Csv
+loading pickle models
+Calling testing function
+Model evalutation : scoring started
+Dropping Ocean_proximity column
+Transforming data with the imputer
+Creating X_test_prepared dataframe
+predicting model
+Calculating Mean Squared Error value
+Calculating Root Mean Squared Error value
+Calculating Mean Absolute error value
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : \data\raw\housing\housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : ..\..\data\raw\housing\housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : \mle-training\data\raw\housing\housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\data\raw\housing\housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Training Started
+Training COmpleted
+LinearRegression() algorithm, mse : 4709785076.06003, rmse 68627.87390018745, mae 49438.66860915833
+Saving model
+Training Started
+Training COmpleted
+DecisionTreeRegressor(random_state=42) algorithm, mse : 0.0, rmse 0.0, mae 0.0
+Saving model
+Training Started
+Training COmpleted
+RandomForestRegressor(random_state=42) algorithm, mse : 347963118.7388974, rmse 18653.76955842699, mae 12073.174057049418
+Saving model
+Execution completed
+**********************************************************
+Creating Instance of Configparser
+Initializing Variables with config defaults value
+Reading csv files with pandas.read_Csv
+loading pickle models
+Calling testing function
+Model evalutation : scoring started
+Dropping Ocean_proximity column
+Transforming data with the imputer
+Creating X_test_prepared dataframe
+predicting model
+Calculating Mean Squared Error value
+Calculating Root Mean Squared Error value
+Calculating Mean Absolute error value
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\data\raw\housing\housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Training Started
+Training COmpleted
+LinearRegression() algorithm, mse : 4709785076.06003, rmse 68627.87390018745, mae 49438.66860915833
+Saving model
+Training Started
+Training COmpleted
+DecisionTreeRegressor(random_state=42) algorithm, mse : 0.0, rmse 0.0, mae 0.0
+Saving model
+Training Started
+Training COmpleted
+RandomForestRegressor(random_state=42) algorithm, mse : 347963118.7388974, rmse 18653.76955842699, mae 12073.174057049418
+Saving model
+Execution completed
+**********************************************************
+Creating Instance of Configparser
+Initializing Variables with config defaults value
+Reading csv files with pandas.read_Csv
+loading pickle models
+Calling testing function
+Model evalutation : scoring started
+Dropping Ocean_proximity column
+Transforming data with the imputer
+Creating X_test_prepared dataframe
+predicting model
+Calculating Mean Squared Error value
+Calculating Root Mean Squared Error value
+Calculating Mean Absolute error value
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\data\raw\housing\housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Training Started
+Training COmpleted
+LinearRegression() algorithm, mse : 4709785076.06003, rmse 68627.87390018745, mae 49438.66860915833
+Saving model
+Training Started
+Training COmpleted
+DecisionTreeRegressor(random_state=42) algorithm, mse : 0.0, rmse 0.0, mae 0.0
+Saving model
+Training Started
+Training COmpleted
+RandomForestRegressor(random_state=42) algorithm, mse : 347963118.7388974, rmse 18653.76955842699, mae 12073.174057049418
+Saving model
+Execution completed
+**********************************************************
+Creating Instance of Configparser
+Initializing Variables with config defaults value
+Reading csv files with pandas.read_Csv
+loading pickle models
+Calling testing function
+Model evalutation : scoring started
+Dropping Ocean_proximity column
+Transforming data with the imputer
+Creating X_test_prepared dataframe
+predicting model
+Calculating Mean Squared Error value
+Calculating Root Mean Squared Error value
+Calculating Mean Absolute error value
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\data\raw\housing\housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Training Started
+Training COmpleted
+LinearRegression() algorithm, mse : 4709785076.06003, rmse 68627.87390018745, mae 49438.66860915833
+Saving model
+Training Started
+Training COmpleted
+DecisionTreeRegressor(random_state=42) algorithm, mse : 0.0, rmse 0.0, mae 0.0
+Saving model
+Training Started
+Training COmpleted
+RandomForestRegressor(random_state=42) algorithm, mse : 347963118.7388974, rmse 18653.76955842699, mae 12073.174057049418
+Saving model
+Execution completed
+**********************************************************
+Creating Instance of Configparser
+Initializing Variables with config defaults value
+Reading csv files with pandas.read_Csv
+loading pickle models
+Calling testing function
+Model evalutation : scoring started
+Dropping Ocean_proximity column
+Transforming data with the imputer
+Creating X_test_prepared dataframe
+predicting model
+Calculating Mean Squared Error value
+Calculating Root Mean Squared Error value
+Calculating Mean Absolute error value
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\data\raw\housing\housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Training Started
+Training COmpleted
+LinearRegression() algorithm, mse : 4709785076.06003, rmse 68627.87390018745, mae 49438.66860915833
+Saving model
+Training Started
+Training COmpleted
+DecisionTreeRegressor(random_state=42) algorithm, mse : 0.0, rmse 0.0, mae 0.0
+Saving model
+Training Started
+Training COmpleted
+RandomForestRegressor(random_state=42) algorithm, mse : 347963118.7388974, rmse 18653.76955842699, mae 12073.174057049418
+Saving model
+Execution completed
+**********************************************************
+Creating Instance of Configparser
+Initializing Variables with config defaults value
+Reading csv files with pandas.read_Csv
+loading pickle models
+Calling testing function
+Model evalutation : scoring started
+Dropping Ocean_proximity column
+Transforming data with the imputer
+Creating X_test_prepared dataframe
+predicting model
+Calculating Mean Squared Error value
+Calculating Root Mean Squared Error value
+Calculating Mean Absolute error value
+Starting ingest_data.py
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training - Copy\data\raw\housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training - Copy\data\raw\housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training - Copy\data\raw\housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training - Copy\data\raw\housing\housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training - Copy\data\housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training - Copy\data\housing\housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Training Started
+Training COmpleted
+LinearRegression() algorithm, mse : 4709785076.06003, rmse 68627.87390018745, mae 49438.66860915833
+Saving model
+Training Started
+Training COmpleted
+DecisionTreeRegressor(random_state=42) algorithm, mse : 0.0, rmse 0.0, mae 0.0
+Saving model
+Training Started
+Training COmpleted
+RandomForestRegressor(random_state=42) algorithm, mse : 347963118.7388974, rmse 18653.76955842699, mae 12073.174057049418
+Saving model
+Execution completed
+**********************************************************
+Creating Instance of Configparser
+Initializing Variables with config defaults value
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training - Copy\data\housing\housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Training Started
+Training COmpleted
+LinearRegression() algorithm, mse : 4709785076.06003, rmse 68627.87390018745, mae 49438.66860915833
+Saving model
+Training Started
+Training COmpleted
+DecisionTreeRegressor(random_state=42) algorithm, mse : 0.0, rmse 0.0, mae 0.0
+Saving model
+Training Started
+Training COmpleted
+RandomForestRegressor(random_state=42) algorithm, mse : 347963118.7388974, rmse 18653.76955842699, mae 12073.174057049418
+Saving model
+Execution completed
+**********************************************************
+Creating Instance of Configparser
+Initializing Variables with config defaults value
+Reading csv files with pandas.read_Csv
+loading pickle models
+Calling testing function
+Model evalutation : scoring started
+Dropping Ocean_proximity column
+Transforming data with the imputer
+Creating X_test_prepared dataframe
+predicting model
+Calculating Mean Squared Error value
+Calculating Root Mean Squared Error value
+Calculating Mean Absolute error value
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training - Copy\data\housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:/Users/rushikesh.naik/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:/Users/rushikesh.naik/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:/Users/rushikesh.naik/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:/Users/rushikesh.naik/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:/Users/rushikesh.naik/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:/Users/rushikesh.naik/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:/Users/rushikesh.naik/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:/Users/rushikesh.naik/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : C:/Users/rushikesh.naik/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Training Started
+Training COmpleted
+LinearRegression() algorithm, mse : 4709829587.97112, rmse 68628.19819848922, mae 49439.89599001893
+Saving model
+Training Started
+Training COmpleted
+DecisionTreeRegressor(random_state=42) algorithm, mse : 0.0, rmse 0.0, mae 0.0
+Saving model
+Training Started
+Training COmpleted
+RandomForestRegressor(random_state=42) algorithm, mse : 345735803.70018464, rmse 18593.972241029744, mae 12065.363736676358
+Saving model
+Execution completed
+**********************************************************
+Creating Instance of Configparser
+Initializing Variables with config defaults value
+Reading csv files with pandas.read_Csv
+loading pickle models
+Calling testing function
+Model evalutation : scoring started
+Dropping Ocean_proximity column
+Transforming data with the imputer
+Creating X_test_prepared dataframe
+predicting model
+Calculating Mean Squared Error value
+Calculating Root Mean Squared Error value
+Calculating Mean Absolute error value
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Training Started
+Training COmpleted
+LinearRegression() algorithm, mse : 4709829587.97112, rmse 68628.19819848922, mae 49439.89599001893
+Saving model
+Training Started
+Training COmpleted
+DecisionTreeRegressor(random_state=42) algorithm, mse : 0.0, rmse 0.0, mae 0.0
+Saving model
+Training Started
+Training COmpleted
+RandomForestRegressor(random_state=42) algorithm, mse : 345735803.70018464, rmse 18593.972241029744, mae 12065.363736676358
+Saving model
+Execution completed
+**********************************************************
+Creating Instance of Configparser
+Initializing Variables with config defaults value
+Reading csv files with pandas.read_Csv
+loading pickle models
+Calling testing function
+Model evalutation : scoring started
+Dropping Ocean_proximity column
+Transforming data with the imputer
+Creating X_test_prepared dataframe
+predicting model
+Calculating Mean Squared Error value
+Calculating Root Mean Squared Error value
+Calculating Mean Absolute error value
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Training Started
+Training COmpleted
+LinearRegression() algorithm, mse : 4709829587.97112, rmse 68628.19819848922, mae 49439.89599001893
+Saving model
+Training Started
+Training COmpleted
+DecisionTreeRegressor(random_state=42) algorithm, mse : 0.0, rmse 0.0, mae 0.0
+Saving model
+Training Started
+Training COmpleted
+RandomForestRegressor(random_state=42) algorithm, mse : 345735803.70018464, rmse 18593.972241029744, mae 12065.363736676358
+Saving model
+Execution completed
+**********************************************************
+Creating Instance of Configparser
+Initializing Variables with config defaults value
+Reading csv files with pandas.read_Csv
+loading pickle models
+Calling testing function
+Model evalutation : scoring started
+Dropping Ocean_proximity column
+Transforming data with the imputer
+Creating X_test_prepared dataframe
+predicting model
+Calculating Mean Squared Error value
+Calculating Root Mean Squared Error value
+Calculating Mean Absolute error value
+Starting ingest_data.py
+Starting Score.py
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Execution completed
+**********************************************************
+Creating Instance of Configparser
+Initializing Variables with config defaults value
+Reading csv files with pandas.read_Csv
+loading pickle models
+Calling testing function
+Model evalutation : scoring started
+Dropping Ocean_proximity column
+Transforming data with the imputer
+Creating X_test_prepared dataframe
+predicting model
+Calculating Mean Squared Error value
+Calculating Root Mean Squared Error value
+Calculating Mean Absolute error value
+Starting ingest_data.py
+Starting Score.py
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Execution completed
+**********************************************************
+Creating Instance of Configparser
+Initializing Variables with config defaults value
+Reading csv files with pandas.read_Csv
+loading pickle models
+Calling testing function
+Model evalutation : scoring started
+Dropping Ocean_proximity column
+Transforming data with the imputer
+Creating X_test_prepared dataframe
+predicting model
+Calculating Mean Squared Error value
+Calculating Root Mean Squared Error value
+Calculating Mean Absolute error value
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Execution completed
+**********************************************************
+Creating Instance of Configparser
+Initializing Variables with config defaults value
+Reading csv files with pandas.read_Csv
+loading pickle models
+Calling testing function
+Model evalutation : scoring started
+Dropping Ocean_proximity column
+Transforming data with the imputer
+Creating X_test_prepared dataframe
+predicting model
+Calculating Mean Squared Error value
+Calculating Root Mean Squared Error value
+Calculating Mean Absolute error value
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Execution completed
+**********************************************************
+Creating Instance of Configparser
+Initializing Variables with config defaults value
+Reading csv files with pandas.read_Csv
+loading pickle models
+Calling testing function
+Model evalutation : scoring started
+Dropping Ocean_proximity column
+Transforming data with the imputer
+Creating X_test_prepared dataframe
+predicting model
+Calculating Mean Squared Error value
+Calculating Root Mean Squared Error value
+Calculating Mean Absolute error value
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Execution completed
+**********************************************************
+Creating Instance of Configparser
+Initializing Variables with config defaults value
+Reading csv files with pandas.read_Csv
+loading pickle models
+Calling testing function
+Model evalutation : scoring started
+Dropping Ocean_proximity column
+Transforming data with the imputer
+Creating X_test_prepared dataframe
+predicting model
+Calculating Mean Squared Error value
+Calculating Root Mean Squared Error value
+Calculating Mean Absolute error value
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Starting ingest_data.py
+Starting Score.py
+Starting train.py
+Cnfig parser initiated
+Reading Config Parameters
+Config Parameters Reading is completed
+Initiating the Argument Parser
+Initializing Variables for the Data
+Functional Call to fetch_housing_data
+Fetching data started
+tgz file is downloaded at : /home/rushikesh/assignment__1_2/mle-training - Copy/data/housing/housing 
+Function call to fetching_housing_data completed
+Loading Housing Data
+Loading the housing path
+Returning the housing_path dataframe
+Data Preprocessing Started
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Calculating the income_cat_propoertions
+Data Preprocessing Completed
+*********************************************************************
+Configparser instantiating
+Initializing Default parameters
+Instantiating Argument Parser
+Reading CSV files from default parameters
+Calling Model_Training Function
+Execution completed
+**********************************************************
+Creating Instance of Configparser
+Initializing Variables with config defaults value
+Reading csv files with pandas.read_Csv
+loading pickle models
+Calling testing function
+Model evalutation : scoring started
+Dropping Ocean_proximity column
+Transforming data with the imputer
+Creating X_test_prepared dataframe
+predicting model
+Calculating Mean Squared Error value
+Calculating Root Mean Squared Error value
+Calculating Mean Absolute error value
