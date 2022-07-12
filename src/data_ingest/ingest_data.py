@@ -7,7 +7,7 @@ import tarfile
 
 sys.path.insert(
     1,
-    r"C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\logs",
+    "logs",
 )
 
 import logger_01 as l
@@ -20,7 +20,7 @@ from sklearn.base import BaseEstimator, TransformerMixin
 
 logger = l.configure_logger(
     log_file=os.path.join(
-        r"C:\Users\rushikesh.naik\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\rushikesh\assignment__1_2\mle-training\logs\logging_files",
+        "logs/logging_files",
         "custom_config.log",
     )
 )
@@ -125,7 +125,7 @@ def data_preprocessing(housing, processed_datapath):
 
     housing_cat = housing[["ocean_proximity"]]
     housing_prepared = housing_tr.join(pd.get_dummies(housing_cat, drop_first=True))
-
+    print(os.path.join(processed_datapath, "housing_prepared.csv"))
     logger.info(f"Storing the processed data at {processed_datapath}")
     housing_prepared.to_csv(
         os.path.join(processed_datapath, "housing_prepared.csv"), index=False
@@ -229,6 +229,7 @@ def data_preprocessing_2(housing, processed_datapath="./"):
     housing_prepared = housing_tr.join(pd.get_dummies(housing_cat, drop_first=True))
 
     # logger.info(f"Storing the processed data at {processed_datapath}")
+    print("\n\n\npath : ", os.path.join(processed_datapath, "housing_prepared.csv"))
     housing_prepared.to_csv(
         os.path.join(processed_datapath, "housing_prepared.csv"), index=False
     )
@@ -246,11 +247,44 @@ def data_preprocessing_2(housing, processed_datapath="./"):
     return True
 
 
+def run_data_ingest(dirname=None):
+    config = configparser.ConfigParser()
+    logger.info("Cnfig parser initiated")
+
+    path = "config.ini"
+    config.read(path)
+    logger.info("Reading Config Parameters")
+    print(config)
+    output_path = config["Address"]["output_path"]
+    processed_datapath = config["Address"]["processed_datapath"]
+    logger.info("Config Parameters Reading is completed")
+
+    logger.info("Initiating the Argument Parser")
+    logger.info("Initializing Variables for the Data")
+
+    DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml/master/"
+    HOUSING_PATH = os.path.join(output_path, "housing")
+    HOUSING_URL = DOWNLOAD_ROOT + f"datasets/housing/housing.tgz"
+
+    # calling the data download function
+    logger.info("Functional Call to fetch_housing_data")
+    fetch_housing_data(housing_url=HOUSING_URL, housing_path=HOUSING_PATH)
+    logger.info("Function call to fetching_housing_data completed")
+
+    logger.info("Loading Housing Data")
+    housing_data = load_housing_data(housing_path=HOUSING_PATH)
+
+    logger.info("Data Preprocessing Started")
+    data_preprocessing_2(housing=housing_data, processed_datapath=processed_datapath)
+    logger.info("Data Preprocessing Completed")
+    logger.info("*********************************************************************")
+
+
 if __name__ == "__main__":
 
     config = configparser.ConfigParser()
     logger.info("Cnfig parser initiated")
-    path = "C:/Users/rushikesh.naik/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/rushikesh/assignment__1_2/mle-training/config.ini"
+    path = "config.ini"
     config.read(path)
     logger.info("Reading Config Parameters")
 
@@ -280,7 +314,7 @@ if __name__ == "__main__":
 
     DOWNLOAD_ROOT = "https://raw.githubusercontent.com/ageron/handson-ml/master/"
     HOUSING_PATH = os.path.join(output_path, "housing")
-    HOUSING_URL = DOWNLOAD_ROOT + f"datasets/housing/housing.tgz"
+    HOUSING_URL = DOWNLOAD_ROOT + "datasets/housing/housing.tgz"
 
     # calling the data download function
     logger.info("Functional Call to fetch_housing_data")

@@ -1,0 +1,7 @@
+conda_env : env.yml
+
+entry_points:
+    main:
+        parameters:
+            exp_name : {type: str, default: 'exp1'}
+        command: "python main.py --exp_name {exp_name}"
