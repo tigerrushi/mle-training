@@ -3,20 +3,16 @@ import configparser
 import pickle
 import sys
 
-sys.path.insert(
-    1,
-    "logs",
-    )
-import os
 
-import logger_01 as l
+import os
+import src.logs.logger_01 as l
 import numpy as np
 import pandas as pd
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 
 logger = l.configure_logger(
     log_file=os.path.join(
-        "logs/logging_files",
+        ".",
         "custom_config.log",
     )
 )

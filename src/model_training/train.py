@@ -8,16 +8,11 @@ import mlflow
 import mlflow.sklearn
 
 
-sys.path.insert(
-    1,
-    "logs",
-)
-
-import logger_01 as l
+import src.logs.logger_01 as l
 
 logger = l.configure_logger(
     log_file=os.path.join(
-        "logs/logging_files",
+        ".",
         "custom_config.log",
     )
 )

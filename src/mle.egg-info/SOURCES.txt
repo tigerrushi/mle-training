@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/data_ingest/__init__.py
+src/data_ingest/ingest_data.py
+src/mle.egg-info/PKG-INFO
+src/mle.egg-info/SOURCES.txt
+src/mle.egg-info/dependency_links.txt
+src/mle.egg-info/top_level.txt
+src/model_scoring/__init__.py
+src/model_scoring/score.py
+src/model_training/__init__.py
+src/model_training/train.py

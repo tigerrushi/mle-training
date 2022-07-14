@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+mletraining.egg-info/PKG-INFO
+mletraining.egg-info/SOURCES.txt
+mletraining.egg-info/dependency_links.txt
+mletraining.egg-info/requires.txt
+mletraining.egg-info/top_level.txt
+src/data_ingest/__init__.py
+src/data_ingest/ingest_data.py
+src/logs/__init__.py
+src/logs/logger_01.py
+src/model_scoring/__init__.py
+src/model_scoring/score.py
+src/model_training/__init__.py
+src/model_training/train.py

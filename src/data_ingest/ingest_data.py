@@ -5,12 +5,8 @@ import pickle
 import sys
 import tarfile
 
-sys.path.insert(
-    1,
-    "logs",
-)
 
-import logger_01 as l
+import src.logs.logger_01 as l
 import numpy as np
 import pandas as pd
 from six.moves import urllib
@@ -20,7 +16,7 @@ from sklearn.base import BaseEstimator, TransformerMixin
 
 logger = l.configure_logger(
     log_file=os.path.join(
-        "logs/logging_files",
+        ".",
         "custom_config.log",
     )
 )

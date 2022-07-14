@@ -1,0 +1,4 @@
+src/data_ingest
+src/logs
+src/model_scoring
+src/model_training

@@ -1,0 +1,4 @@
+data_ingest
+logs
+model_scoring
+model_training
