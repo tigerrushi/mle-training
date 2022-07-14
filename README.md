@@ -23,6 +23,10 @@ pip list
 # test
 python -c 'frpm src.data_ingest import ingest_data'
 
+# also create  processed, saved_models folder
+mkdir processed saved_models
+
+
 ```
 # Example for test_script running
 ```python
@@ -38,13 +42,13 @@ HOUSING_PATH = os.path.join(".", "housing")
 HOUSING_URL = DOWNLOAD_ROOT + f"datasets/housing/housing.tgz"
 
 ingest_data.fetch_housing_data(HOUSING_URL, HOUSING_PATH)
-housing_path = "/housing"
+housing_path = "./housing"
 df = ingest_data.load_housing_data(housing_path)
 print(df)
-ingest_data.data_preprocessing(df,' /processed' )
-housing = pd.read_csv(' /processed/housing_prepared.csv')
-labels = pd.read_csv(' /processed/housing_labels.csv')
-model_path = ' /saved_models'
+ingest_data.data_preprocessing(df,'./processed' )
+housing = pd.read_csv('./processed/housing_prepared.csv')
+labels = pd.read_csv('./processed/housing_labels.csv')
+model_path = './saved_models'
 exp_name = 'Dude_the_great'
 train.training_with_gridsearchCV(housing,
                                 labels,
@@ -52,9 +56,9 @@ train.training_with_gridsearchCV(housing,
                                 'dummy',
                                 exp_name = exp_name)
 
-imputer = pickle.load(open(" /processed/imputer.pkl", "rb"))
-model = pickle.load(open(" /saved_models/linear_regresion.pkl", "rb"))
-strat_test_set = pd.read_csv(' /processed/strat_test_set.csv')
+imputer = pickle.load(open("./processed/imputer.pkl", "rb"))
+model = pickle.load(open(" ./saved_models/linear_regresion.pkl", "rb"))
+strat_test_set = pd.read_csv('./processed/strat_test_set.csv')
 score.testing_using_strat_test_set(model,
                                     imputer,
                                     strat_test_set)
