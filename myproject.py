@@ -1,35 +1,10 @@
-# mle-training
-MLE Training for Assignments
+"""
+Package your utilities into a python package and store tha package in a private
+python repo, then have docker image that contains your project install these utilities from your repo
+that way you can easily control versioning of theses utilities across all project that have
+a dependency on them
 
-### Steps to run the Python code
-```sh
-git clone https://github.com/tigerrushi/mle-training.git
-cd mle-training
-conda env create -f env.yml
-cd mle_code_snippet
-pip install sklearn
-python nonstandardcode.py
-```
-### steps for installing software after you clone the github
-
-```sh
-cd mle-training
-pip install artifact/mletraining-0.1.12-py3-none-any.whl
-
-# to check if the software installed
-pip list
-# check for mletraining
-
-# test
-python -c 'frpm src.data_ingest import ingest_data'
-
-# also create  processed, saved_models folder
-mkdir processed saved_models
-
-
-```
-# Example for test_script running
-```python
+"""
 from src.data_ingest import ingest_data
 import pandas as pd
 import pickle
@@ -57,27 +32,8 @@ train.training_with_gridsearchCV(housing,
                                 exp_name = exp_name)
 
 imputer = pickle.load(open("./processed/imputer.pkl", "rb"))
-model = pickle.load(open(" ./saved_models/linear_regresion.pkl", "rb"))
+model = pickle.load(open("./saved_models/linear_regresion.pkl", "rb"))
 strat_test_set = pd.read_csv('./processed/strat_test_set.csv')
 score.testing_using_strat_test_set(model,
                                     imputer,
                                     strat_test_set)
-
-```
-
-## To check logs
-```sh
-pwd
-# project should be you working directory
-```
-- check the file with name `custom_config.log`
-
-
-### To run docker image
-```sh
-# check for docker version
-docker --version
-docker pull tigerdockerrushi/test_mletraining:test_mletraining
-docker run tigerdockerrushi/test_mletraining:test_mletraining
-```
-
