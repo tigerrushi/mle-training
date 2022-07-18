@@ -72,3 +72,11 @@ pwd
 ```
 - check the file with name `custom_config.log`
 
+
+### To run docker image
+```sh
+# check for docker version
+docker --version
+docker pull tigerdockerrushi/test_mletraining:test_mletraining
+docker run tigerdockerrushi/test_mletraining:test_mletraining
+```
